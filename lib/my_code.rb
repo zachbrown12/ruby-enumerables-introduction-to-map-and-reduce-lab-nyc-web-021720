@@ -56,10 +56,10 @@ def reduce_to_all_true(source_array)
   while i < source_array.length
     if source_array[i] == "false"
       return false
-      i += 1
     end
-    return true
+    i += 1
   end
+  return true
 end
 
 def reduce_to_any_true(source_array)
@@ -69,8 +69,9 @@ def reduce_to_any_true(source_array)
       return true
       i += 1
     end
-    return false
   end
+      return false
+
 end
 
 
